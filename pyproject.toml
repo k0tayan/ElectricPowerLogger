@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "uno-ct-sense-board"
+version = "0.1.0"
+description = ""
+authors = ["k0tayan <kotayan0415@outlook.jp>"]
+readme = "README.md"
+packages = [{include = "uno_ct_sense_board"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyserial = "^3.5"
+gradio = "^3.15.0"
+pyproject-flake8 = "^6.0.0.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+max-line-length = 200
+max-complexity = 18
